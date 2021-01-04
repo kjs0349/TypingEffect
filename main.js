@@ -1,11 +1,11 @@
 const dynamic = document.querySelector('.dynamic');
 const mainText = document.querySelector('.maintext');
-const messageArry = ['Hello ~', 'My name is', 'KimJiSu!!'];
+const messageArry = ['Hello ~', 'My name is', 'Kim Ji Su!!'];
 
 // dynamic 커서 만들기
 setInterval(function(){
     dynamic.classList.toggle('dynamic')
-}, 400);
+}, 200);
 
 
 let num = 0;
@@ -17,7 +17,7 @@ function typingtext(printmessage) {
         mainText.textContent += printmessage.shift();
         setTimeout(() => {
             typingtext(printmessage);
-        }, 400);
+        }, 200);
     } else {
         num++;
         message = messageArry[num];
