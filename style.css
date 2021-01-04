@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .dynamic::after {
     content: "";
@@ -35,5 +36,6 @@ body {
     width: 3px;
     height: 88%;
     background-color: #fff;
-    margin-left: 10px;
+    position: absolute;
+    right: -10px;
 }
