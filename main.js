@@ -18,7 +18,13 @@ function typingtext(printmessage) {
         setTimeout(() => {
             typingtext(printmessage);
         }, 400);
-    } 
+    } else {
+        num++;
+        message = messageArry[num];
+        printmessage = message.split("");
+        mainText.innerHTML = "";
+        typingtext(printmessage);
+    }
 }
 
 typingtext(printmessage);
